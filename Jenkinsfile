@@ -2,4 +2,4 @@
 
 env.COMPONENT = "payment"
 env.BUILD_LABEL = "WORKSTATION"
-nodejs()
+python()
