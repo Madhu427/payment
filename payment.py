@@ -21,8 +21,8 @@ from prometheus_client import Counter, Histogram
 app = Flask(__name__)
 app.logger.setLevel(logging.INFO)
 
-CART = os.getenv('CART_HOST', 'cart')
-CART_PORT = os.getenv('CART_PORT', 8080)
+payment = os.getenv('payment_HOST', 'payment')
+payment_PORT = os.getenv('payment_PORT', 8080)
 USER = os.getenv('USER_HOST', 'user')
 USER_PORT = os.getenv('USER_PORT', 8080)
 PAYMENT_GATEWAY = os.getenv('PAYMENT_GATEWAY', 'https://google.com/')
